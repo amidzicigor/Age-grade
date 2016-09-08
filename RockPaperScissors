@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple math</title>
+</head>
+<body>
+
+	
+	<script>
+		
+		var userChoice = prompt("Rock, paper, or scissors?").toLowerCase();
+		var randNum = Math.floor(Math.random() * 101)
+		
+		if(randNum < 33) {
+			var computerChoice = "rock";
+		} else if (randNum > 33 && randNum < 67) {
+			var computerChoice = "paper";
+		} else {
+			var computerChoice = "scissors";
+		}
+
+		document.write("User choice: " + userChoice + "<br />");
+		document.write("Computer choice: " + computerChoice + "<br />");
+
+		if(userChoice === "rock" || userChoice === "paper" || userChoice === "scissors"){
+
+			if(userChoice === computerChoice){
+				document.write("Its a tie!");
+			} else if(userChoice === "rock" && computerChoice === "paper"){
+				document.write("Computer wins!");
+			} else if(userChoice === "rock" && computerChoice === "scissors"){
+				document.write("User wins!");
+			} else if(userChoice === "paper" && computerChoice === "scissors"){
+				document.write("Computer wins!");
+			} else if(userChoice === "paper" && computerChoice === "rock"){
+				document.write("User wins!");
+			} else if(userChoice === "scissors" && computerChoice === "rock"){
+				document.write("Computer wins!");
+			} else if(userChoice === "scissors" && computerChoice === "paper"){
+				document.write("User wins!");
+			} else {
+				document.write("Error");
+			}
+		} else {
+			document.write("You have to choose either Rock, Paper, or Scissors!");
+		}
+
+
+	</script>
+
+</body>
+</html>
