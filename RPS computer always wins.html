@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock Paper Scissors</title>
+</head>
+<body>
+
+	
+	<script>
+		
+	var userChoice = prompt("Rock, paper, or scissors?").toLowerCase();
+	document.write("User choice: " + userChoice + "<br />");
+
+
+	if(userChoice === "rock" || userChoice === "paper" || userChoice === "scissors"){
+		if(userChoice === "rock"){
+			var computerChoice = "paper";
+		} else if(userChoice === "paper") {
+			var computerChoice = "scissors";
+		} else if(userChoice === "scissors"){
+			var computerChoice = "rock";
+		} else {
+			document.write("Error");
+		}
+
+		document.write("Computer choice: " + computerChoice + "<br />");
+
+	} else {
+		document.write("You must choose either Rock, Paper, or Scissors!");
+	}
+
+	document.write("Computer wins!");
+
+
+	</script>
+
+</body>
+</html>
