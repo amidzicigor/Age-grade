@@ -1,0 +1,75 @@
+* {
+	font-family: monospace;
+}
+
+body {
+	background-color: powderblue;
+	text-align: center;
+}
+
+#version {
+	font-size: 15px;
+	position: absolute;
+	bottom: -5px;
+	right: 15px;
+}
+
+#title {
+	margin-top: 25px;
+	margin-bottom: 120px;
+	font-size: 120px;
+	color: #262626;
+}
+
+#playOrNot {
+	margin-bottom: 15px;
+	font-size: 25px;
+	color: #4d4d4d;
+}
+
+.yesPlay {
+	font-size: 20px;
+	background-color: #4d4d4d;
+	color: powderblue;
+	border-style: none;
+	height: 40px;
+	width: 100px;
+	margin-right: 50px;
+	border-radius: 5px;
+	outline: 0px;
+	transition: 0.3s;
+}
+
+.noPlay {
+	font-size: 20px;
+	background-color: #4d4d4d;
+	color: powderblue;
+	border-style: none;
+	height: 40px;
+	width: 100px;
+	border-radius: 5px;
+	outline: 0px;
+	transition: 0.2s;
+}
+
+.yesPlay:hover {
+	cursor: pointer;
+	background-color: #FABD44;
+	color: #4d4d4d;
+}
+
+.noPlay:hover {
+	cursor: pointer;
+	background-color: #FABD44;
+	color: #4d4d4d;
+}
+
+.yesPlay:active {
+	background-color: #fcd383;
+	transition: none;
+}
+
+.noPlay:active {
+	background-color: #fcd383;
+	transition: none; 
+}
