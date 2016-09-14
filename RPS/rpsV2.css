@@ -17,8 +17,8 @@ body {
 
 /*Rock Paper Scissors*/
 #title {
-	margin-top: 25px;
-	margin-bottom: 120px;
+	margin-top: 15px;
+	margin-bottom: 50px;
 	font-size: 120px;
 	color: #262626;
 }
@@ -61,16 +61,13 @@ body {
 	transition: none;
 }
 
-#instruction {
+#yesButtonResult {
+	color: #4d4d4d;
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+#instructions {
+	color: #4d4d4d;
 	font-size: 25px;
-}
-
-#rock, #paper, #scissors {
-	height: 40px;
-	width: 125px
-}
-
-#paper {
-	margin-right: 25px;
-	margin-left: 25px;
 }
