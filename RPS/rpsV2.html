@@ -2,26 +2,34 @@
 <html>
 <head>
 	<title>RpsV2</title>
-	<script type="text/javascript" src="javascriptTest.js"></script>
+	<script type="text/javascript" src="rpsV2.js"></script>
 	<link rel="stylesheet" href="rpsV2.css">
 </head>
 <body>
 
 	<h1 id="title">Rock Paper Scissors</h1>
 
+	<!-- 
+	<div id="yesAndNo">
+
 	<h3 id="playOrNot">Do you want to play?</h3>
+	<input class="button" id="yesButton" type="button" onclick="yesButton()" value="Yes">
+	<input class="button" id="noButton" type="button" onclick="" value="No">
+	</div>
+	-->
 
+	<form name="userName">
+		<label>Name:</label>
+        <input type="text" name="userNameBox">
+        <input type="button" value="submitName" onclick="userNameFunction()">
+	</form>
 
-	<input class="button" id="yesButton" type="button" onclick="location.href='rpsV2-yes.html'" value="Yes">
-	<input class="button" id="noButton" type="button" onclick="location.href='rpsV2-no.html'" value="No">
-
-
-
-
+	<div id="writeUserName"></div>
 
 
 
 	<p id="version">Igor Amidzic : version 2.0</p>
 </body>
 </html>
+
 
