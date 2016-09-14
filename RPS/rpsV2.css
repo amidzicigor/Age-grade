@@ -1,0 +1,76 @@
+* {
+	font-family: monospace;
+}
+
+body {
+	background-color: powderblue;
+	text-align: center;
+}
+
+/*version*/
+#version {
+	font-size: 15px;
+	position: absolute;
+	bottom: -5px;
+	right: 15px;
+}
+
+/*Rock Paper Scissors*/
+#title {
+	margin-top: 25px;
+	margin-bottom: 120px;
+	font-size: 120px;
+	color: #262626;
+}
+
+/*Do you want to play?*/
+#playOrNot {
+	margin-bottom: 15px;
+	font-size: 25px;
+	color: #4d4d4d;
+}
+
+/*Yes*/
+.button {
+	font-size: 20px;
+	background-color: #4d4d4d;
+	color: powderblue;
+	border-style: none;
+	border-radius: 5px;
+	outline: 0px;
+	transition: 0.3s;
+}
+
+#yesButton, #noButton {
+	height: 40px;
+	width: 100px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-top: 8px;
+}
+
+/*Yes:hover*/
+.button:hover {
+	cursor: pointer;
+	background-color: #FABD44;
+	color: #4d4d4d;
+}
+
+.button:active {
+	background-color: #fcd383;
+	transition: none;
+}
+
+#instruction {
+	font-size: 25px;
+}
+
+#rock, #paper, #scissors {
+	height: 40px;
+	width: 125px
+}
+
+#paper {
+	margin-right: 25px;
+	margin-left: 25px;
+}
