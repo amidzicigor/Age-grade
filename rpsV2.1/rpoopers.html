@@ -9,17 +9,38 @@
 
 	<h1 id="title">Rock Paper Scissors</h1>
 
+	<div id="choosingRPS">
 	<h2 id="choose">Choose your weapon!</h2>
 
 	<input class="button" id="rock" type="button" name="rock" value="Rock" onclick="onButtonClick('rock')">
 	<input class="button" id="paper" type="button" name="paper" value="Paper" onclick="onButtonClick('paper')">
 	<input class="button" id="scissors" type="button" name="scissors" value="Scissors" onclick="onButtonClick('scissors')">
+	</div>
 
 	<div id="result"></div>
 
-	<div id="scoreboard"></div>
+	<div id="scoreboard">
+		<table>
+  			<tr>
+				<th>Winner</th>
+				<th>Tally</th>
+		  	</tr>
+		  	<tr>
+		    	<td>User</td>
+		    	<td id="x"></td>
+		  	</tr>
+		 	<tr>
+		    	<td>Computer</td>
+		    	<td id="y"></td>
+		  	</tr>
+		  	<tr>
+		    	<td>Tie</td>
+		    	<td id="z"></td>
+		  	</tr>
+		</table>
+	</div>
 
-
+<div id="numberOfGames"></div>
 
 
 
