@@ -1,3 +1,5 @@
+var i = 0;
+
 function onButtonClick(choice) {
 
 	//gets user's choice from button click
@@ -44,13 +46,32 @@ function onButtonClick(choice) {
 
 	//document the result to screen
 	if (result1 === "Computer") {
-		document.getElementById("result").innerHTML += "The computer wins!";
+		document.getElementById("result").innerHTML += "The <em>computer</em> wins!";
 	} else if (result1 === "User") {
-		document.getElementById("result").innerHTML += "The user wins!";
+		document.getElementById("result").innerHTML += "The <em>user</em> wins!";
 	} else if (result1 === "Tie") {
 		document.getElementById("result").innerHTML += "Its a tie!";
 	}
 
 	//implimenting a scoreboard
+	if (result1 === "User") {
+		document.getElementById("x").innerHTML += "|";
+	} else if (result1 === "Computer") {
+		document.getElementById("y").innerHTML += "|";
+	} else if (result1 === "Tie") {
+		document.getElementById("z").innerHTML += "|";
+	}
+
+	//counter 
+	if (result1 === "Computer" || result1 === "User") {
+		i++;
+		document.getElementById("numberOfGames").innerHTML = "First to 5 win: " + i;
+	}
+
+	if (i > 4) {
+		document.getElementById("choosingRPS").innerHTML = "";
+	}
 	
+
+}
 }
