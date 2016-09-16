@@ -71,7 +71,4 @@ function onButtonClick(choice) {
 	if (i > 4) {
 		document.getElementById("choosingRPS").innerHTML = "";
 	}
-	
-
-}
 }
